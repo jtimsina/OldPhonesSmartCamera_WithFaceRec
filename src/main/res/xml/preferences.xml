@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="pref_ip_address"
+        android:title="Server IP Address"
+        android:summary="127.0.0.1"
+        android:defaultValue="127.0.0.1"/>
+    <EditTextPreference
+        android:key="pref_port"
+        android:title="RTSP Port"
+        android:summary="80"
+        android:defaultValue="80"/>
+    <EditTextPreference
+        android:key="pref_device_name"
+        android:title="Device Name"
+        android:summary="default"
+        android:defaultValue="default"/>
+    <EditTextPreference
+        android:key="pref_http_port"
+        android:title="HTTP Port"
+        android:summary="5000"
+        android:defaultValue="5000"/>
+
+
+</PreferenceScreen>

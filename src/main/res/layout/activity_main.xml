@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayoutTop">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="24sp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Visitors"
+        android:id="@+id/recentActivityText"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:layout_below="@id/linearLayoutTop"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/all_images"
+        android:onClick="onClick"
+        android:text="All Images"
+        android:textColor="@color/colorPrimary"
+        android:layout_toRightOf="@+id/recentActivityText"
+        android:layout_alignBottom="@+id/recentActivityText"
+        android:layout_marginLeft="20dp"
+        android:textSize="24sp"
+        />
+
+    <view class="android.support.v7.widget.RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recentActivityRecyclerView"
+        android:layout_below="@+id/recentActivityText">
+    </view>
+
+    <android.support.design.widget.FloatingActionButton
+    android:id="@+id/floatingActionButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    app:srcCompat="@android:drawable/ic_menu_view"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:onClick="onClick"/>
+
+
+</RelativeLayout>
